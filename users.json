@@ -1,0 +1,62 @@
+[
+  {
+    "displayName": "Faith Idowu",
+    "firstName": "Faith",
+    "lastName": "Idowu",
+    "email": "faith.idowu@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-faith-001",
+    "createdAt": "2025-02-01T10:00:00Z"
+  },
+  {
+    "displayName": "Matthew Akhabue",
+    "firstName": "Matthew",
+    "lastName": "Akhabue",
+    "email": "matthew.akhabue@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-matthew-002",
+    "createdAt": "2025-02-01T10:05:00Z"
+  },
+  {
+    "displayName": "Maxwell Iwe",
+    "firstName": "Maxwell",
+    "lastName": "Iwe",
+    "email": "maxwell.iwe@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-maxwell-003",
+    "createdAt": "2025-02-01T10:10:00Z"
+  },
+  {
+    "displayName": "Ojeaga Clifford",
+    "firstName": "Ojeaga",
+    "lastName": "Clifford",
+    "email": "ojeaga.clifford@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-ojeaga-004",
+    "createdAt": "2025-02-01T10:15:00Z"
+  },
+  {
+    "displayName": "Mirian Ukeje",
+    "firstName": "Mirian",
+    "lastName": "Ukeje",
+    "email": "mirian.ukeje@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-mirian-005",
+    "createdAt": "2025-02-01T10:20:00Z"
+  },
+  {
+    "displayName": "Ogorchukwu Okuku",
+    "firstName": "Ogorchukwu",
+    "lastName": "Okuku",
+    "email": "ogorchukwu.okuku@example.com",
+    "role": "admin",
+    "oauthProvider": "google",
+    "authId": "google-ogor-006",
+    "createdAt": "2025-02-01T10:25:00Z"
+  }
+]
