@@ -17,8 +17,9 @@ routes.get('/', (req, res) => {
   res.send('Welcome to the ShopSphere API');
 });
 
-// Swagger UI
 app.use('/', routes);
+
+// Swagger UI
 /* app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); */
 
 const PORT = process.env.PORT || 3000;
