@@ -1,9 +1,10 @@
 const express = require('express');
+require('dotenv').config();
 const mongoose = require('./config/db');
 const routes = require('./routes');
-/* const swaggerUi = require('swagger-ui-express');
-const swaggerDocument = require('./swagger/swagger.json'); */
-require('dotenv').config();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./swagger/swagger.json');
+
 
 const app = express();
 
@@ -20,7 +21,7 @@ routes.get('/', (req, res) => {
 app.use('/', routes);
 
 // Swagger UI
-/* app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument)); */
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
