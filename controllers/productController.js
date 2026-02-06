@@ -58,7 +58,7 @@ const updateProduct = async (req, res) => {
     if (response.modifiedCount > 0) {
       res.status(204).send();
     } else {
-      res.status(500).json({ message: 'Contact not found or no changes made' })
+      res.status(500).json({ message: 'Product not found or no changes made' })
     }
   } catch (error) {
     res.status(500).json({ message: 'Internal server error', error: error.message });

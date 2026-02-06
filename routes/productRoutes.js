@@ -1,6 +1,6 @@
 const routes = require('express').Router();
 
-const contactsController = require('../controllers/contacts');
+const productController = require('../controllers/productController');
 
 routes.get('/', productController.getAllProducts);
 
