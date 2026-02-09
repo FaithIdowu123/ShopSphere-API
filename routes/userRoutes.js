@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+const isauthenticated = require("../middleware/authenticate");
 
 /**
  * @swagger
@@ -43,7 +44,7 @@ router.get('/:id', async (req, res, next) => {
  *     summary: Add a new user
  *     tags: [Users]
  */
-router.post('/', async (req, res, next) => {
+router.post('/', isauthenticated, async (req, res, next) => {
   try {
     await userController.addUser(req, res);
   } catch (error) {
@@ -60,7 +61,7 @@ router.post('/', async (req, res, next) => {
  *     summary: Update a user
  *     tags: [Users]
  */
-router.put('/:id', async (req, res, next) => {
+router.put('/:id', isauthenticated, async (req, res, next) => {
   try {
     await userController.updateUser(req, res);
   } catch (error) {
@@ -77,7 +78,7 @@ router.put('/:id', async (req, res, next) => {
  *     summary: Delete a user
  *     tags: [Users]
  */
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', isauthenticated, async (req, res, next) => {
   try {
     await userController.deleteUser(req, res);
   } catch (error) {

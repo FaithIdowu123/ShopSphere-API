@@ -1,43 +1,59 @@
 const express = require('express');
 const cors = require('cors');
+const session = require('express-session');
 const connectDB = require('./config/db');
 const routes = require('./routes');
 const errorHandler = require('./middleware/errorHandler');
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocument = require('./swagger/swagger-output.json');
+const passport = require('./config/passport'); 
 require('dotenv').config();
 
 const app = express();
 
 // Middleware
-app.use(cors()); // Allow all origins (for development)
+app.use(cors());
 app.use(express.json());
 
-// Root route
-routes.get('/', (req, res) => {
-  res.send('Welcome to the ShopSphere API');
+// ------------------- SESSION SETUP -------------------
+app.use(
+  session({
+    secret: process.env.SESSION_SECRET || 'secret123', 
+    resave: false,
+    saveUninitialized: false,
+  })
+);
+
+
+app.use(passport.initialize());
+app.use(passport.session());
+
+
+app.get('/', (req, res) => {
+  res.send("Welcom to ShopSphere API " + (req.user ? `${req.user.firstName}` : ""));;
 });
 
-// Mount routes
-app.use('/', routes);
 
-// Swagger UI
+app.use('/', routes); 
+
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
-// Global error handler (must be after routes)
 app.use(errorHandler);
 
-// Connect to MongoDB and start server
+
 const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
 
 connectDB()
   .then(() => {
     console.log('MongoDB connected, starting server...');
-    app.listen(PORT, () => {
-      console.log(`Server running on port ${PORT}`);
-    });
+    
   })
   .catch((err) => {
     console.error('Failed to connect to MongoDB:', err);
-    process.exit(1); // Stop the server if DB connection fails
+    process.exit(1);
   });
+
+module.exports = app;

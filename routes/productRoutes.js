@@ -1,9 +1,10 @@
 const express = require("express");
 const router = express.Router();
 const productController = require("../controllers/productController");
+const isauthenticated = require("../middleware/authenticate");
 
 // CREATE product
-router.post("/", async (req, res, next) => {
+router.post("/", isauthenticated, async (req, res, next) => {
   try {
     await productController.createProduct(req, res, next);
   } catch (error) {
@@ -36,7 +37,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 // UPDATE product
-router.put("/:id", async (req, res, next) => {
+router.put("/:id", isauthenticated, async (req, res, next) => {
   try {
     await productController.updateProduct(req, res, next);
   } catch (error) {
@@ -47,7 +48,7 @@ router.put("/:id", async (req, res, next) => {
 });
 
 // DELETE product
-router.delete("/:id", async (req, res, next) => {
+router.delete("/:id", isauthenticated, async (req, res, next) => {
   try {
     await productController.deleteProduct(req, res, next);
   } catch (error) {
