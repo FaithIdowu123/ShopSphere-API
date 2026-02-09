@@ -14,7 +14,7 @@ app.use(cors()); // Allow all origins (for development)
 app.use(express.json());
 
 // Root route
-routes.get('/', (req, res) => {
+app.get('/', (req, res) => {
   res.send('Welcome to the ShopSphere API');
 });
 
