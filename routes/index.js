@@ -3,11 +3,15 @@ const routes = express.Router();
 
 const productRoutes = require('./productRoutes');
 const userRoutes = require('./userRoutes');
+const orderRoutes = require('./orderRoutes');
+const reviewRoutes = require('./reviewRoutes');
 
-// Mount product routes
 routes.use('/products', productRoutes);
 
-// Mount user routes
 routes.use('/users', userRoutes);
+
+routes.use('/orders', orderRoutes);
+
+routes.use('/reviews', reviewRoutes);
 
 module.exports = routes;
