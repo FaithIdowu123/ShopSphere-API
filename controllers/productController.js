@@ -36,14 +36,12 @@ exports.getProductById = async (req, res, next) => {
     const product = await Product.findById(req.params.id);
 
     if (!product) {
-      const err = new Error('Product not found');
-      err.status = 404;
-      throw err;
+      return res.status(404).json({ message: "Product not found" });
     }
 
     res.status(200).json(product);
-  } catch (error) {
-    next(error);
+  } catch (err) {
+    next(err); // only REAL errors go here
   }
 };
 

@@ -1,0 +1,135 @@
+[
+  {
+    "productId": "6982156c0ce42f2921c89bec",
+    "userId": "698c8ec7a994d5db983334df",
+    "rating": 5,
+    "comment": "Lightweight and great for cardio workouts.",
+    "createdAt": "2026-02-01T10:00:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bec",
+    "userId": "698c8ec7a994d5db983334e0",
+    "rating": 4,
+    "comment": "Good grip, rotates smoothly.",
+    "createdAt": "2026-02-01T10:15:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bee",
+    "userId": "698c8ec7a994d5db983334e1",
+    "rating": 5,
+    "comment": "Adjustable and sturdy stand for my tablet.",
+    "createdAt": "2026-02-01T10:20:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bd5",
+    "userId": "698c8ec7a994d5db983334e2",
+    "rating": 5,
+    "comment": "Keys feel amazing and RGB is fantastic.",
+    "createdAt": "2026-02-01T10:25:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bdd",
+    "userId": "698c8ec7a994d5db983334e3",
+    "rating": 4,
+    "comment": "Very comfortable running shoes.",
+    "createdAt": "2026-02-02T08:30:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89be8",
+    "userId": "698c8ec7a994d5db983334e4",
+    "rating": 5,
+    "comment": "Power bank charges multiple devices quickly.",
+    "createdAt": "2026-02-02T09:10:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bd7",
+    "userId": "698c8ec7a994d5db983334df",
+    "rating": 4,
+    "comment": "Bluetooth headphones have excellent noise cancellation.",
+    "createdAt": "2026-02-02T11:45:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89be0",
+    "userId": "698c8ec7a994d5db983334e0",
+    "rating": 5,
+    "comment": "Backpack is durable and has enough compartments.",
+    "createdAt": "2026-02-03T10:20:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bde",
+    "userId": "698c8ec7a994d5db983334e1",
+    "rating": 4,
+    "comment": "Hoodie is soft and fits perfectly.",
+    "createdAt": "2026-02-03T11:50:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89be9",
+    "userId": "698c8ec7a994d5db983334e2",
+    "rating": 5,
+    "comment": "Laptop sleeve protects my laptop well.",
+    "createdAt": "2026-02-04T09:35:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bea",
+    "userId": "698c8ec7a994d5db983334e3",
+    "rating": 4,
+    "comment": "Yoga mat is non-slip and comfortable.",
+    "createdAt": "2026-02-04T12:00:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bd9",
+    "userId": "698c8ec7a994d5db983334e4",
+    "rating": 5,
+    "comment": "Notebook has good quality paper for writing.",
+    "createdAt": "2026-02-05T14:15:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bda",
+    "userId": "698c8ec7a994d5db983334e4",
+    "rating": 4,
+    "comment": "Pen pack writes smoothly and consistently.",
+    "createdAt": "2026-02-05T15:00:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bdc",
+    "userId": "698c8ec7a994d5db983334e5",
+    "rating": 5,
+    "comment": "Desk lamp is bright and adjustable, perfect for work.",
+    "createdAt": "2026-02-06T08:50:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89be4",
+    "userId": "698c8ec7a994d5db983334e5",
+    "rating": 4,
+    "comment": "Cutlery set is elegant and well made.",
+    "createdAt": "2026-02-06T09:20:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89be1",
+    "userId": "698c8ec7a994d5db983334e0",
+    "rating": 5,
+    "comment": "Water bottle keeps drinks cold for hours.",
+    "createdAt": "2026-02-06T10:10:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bd4",
+    "userId": "698c8ec7a994d5db983334df",
+    "rating": 5,
+    "comment": "Wireless mouse is very responsive and ergonomic.",
+    "createdAt": "2026-02-07T08:00:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bdf",
+    "userId": "698c8ec7a994d5db983334e1",
+    "rating": 4,
+    "comment": "Jeans fit well and are comfortable.",
+    "createdAt": "2026-02-07T09:45:00Z"
+  },
+  {
+    "productId": "6982156c0ce42f2921c89bd8",
+    "userId": "698c8ec7a994d5db983334e2",
+    "rating": 5,
+    "comment": "Smart watch is accurate and has great features.",
+    "createdAt": "2026-02-07T10:30:00Z"
+  }
+]

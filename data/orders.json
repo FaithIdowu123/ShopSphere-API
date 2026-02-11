@@ -1,0 +1,65 @@
+[
+  {
+    "userId": "698c8ec7a994d5db983334df",
+    "products": ["6982156c0ce42f2921c89bec", "6982156c0ce42f2921c89bea", "6982156c0ce42f2921c89bd9"],
+    "totalAmount": 55.97,
+    "status": "delivered",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-01T12:30:00Z",
+    "orderAddress": "12 Unity Street, Lagos, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e0",
+    "products": ["6982156c0ce42f2921c89bd5", "6982156c0ce42f2921c89be8"],
+    "totalAmount": 119.98,
+    "status": "shipped",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-02T09:45:00Z",
+    "orderAddress": "45 Victoria Avenue, Abuja, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e1",
+    "products": ["6982156c0ce42f2921c89bdd", "6982156c0ce42f2921c89bdf", "6982156c0ce42f2921c89bde"],
+    "totalAmount": 438.97,
+    "status": "processing",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-03T14:15:00Z",
+    "orderAddress": "23 Freedom Road, Port Harcourt, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e2",
+    "products": ["6982156c0ce42f2921c89be0", "6982156c0ce42f2921c89be7"],
+    "totalAmount": 89.98,
+    "status": "delivered",
+    "paymentMethod": "bank_transfer",
+    "createdAt": "2026-02-04T11:20:00Z",
+    "orderAddress": "88 Peace Lane, Ibadan, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e3",
+    "products": ["6982156c0ce42f2921c89be9", "6982156c0ce42f2921c89bea", "6982156c0ce42f2921c89bdc"],
+    "totalAmount": 77.97,
+    "status": "cancelled",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-05T08:50:00Z",
+    "orderAddress": "5 Harmony Street, Kano, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e4",
+    "products": ["6982156c0ce42f2921c89bd7", "6982156c0ce42f2921c89be2", "6982156c0ce42f2921c89be4"],
+    "totalAmount": 244.97,
+    "status": "shipped",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-06T16:30:00Z",
+    "orderAddress": "10 Liberty Avenue, Enugu, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e5",
+    "products": ["6982156c0ce42f2921c89bd4", "6982156c0ce42f2921c89be8", "6982156c0ce42f2921c89bd8"],
+    "totalAmount": 259.97,
+    "status": "processing",
+    "paymentMethod": "bank_transfer",
+    "createdAt": "2026-02-07T09:15:00Z",
+    "orderAddress": "77 Sunrise Road, Abuja, Nigeria"
+  }
+]

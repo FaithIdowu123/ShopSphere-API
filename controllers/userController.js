@@ -17,14 +17,11 @@ exports.getSingleUser = async (req, res, next) => {
     const user = await User.findById(req.params.id).select('-authId');
 
     if (!user) {
-      const err = new Error('User not found');
-      err.status = 404;
-      throw err;
+      return res.status(404).json({ message: "User not found" });
     }
 
     res.status(200).json(user);
   } catch (err) {
-    err.status = 400; // invalid ID or DB error
     next(err);
   }
 };
