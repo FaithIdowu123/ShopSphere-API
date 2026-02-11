@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
+const isauthenticated = require("../middleware/authenticate");
 const {
   validateUserCreate,
   validateUserUpdate
@@ -47,7 +48,7 @@ router.get('/:id', async (req, res, next) => {
  *     summary: Add a new user
  *     tags: [Users]
  */
-router.post('/', validateUserCreate, async (req, res, next) => {
+router.post('/', isauthenticated, validateUserCreate, async (req, res, next) => {
   try {
     await userController.addUser(req, res);
   } catch (error) {
@@ -64,7 +65,7 @@ router.post('/', validateUserCreate, async (req, res, next) => {
  *     summary: Update a user
  *     tags: [Users]
  */
-router.put('/:id', validateUserUpdate, async (req, res, next) => {
+router.put('/:id', isauthenticated, validateUserUpdate, async (req, res, next) => {
   try {
     await userController.updateUser(req, res);
   } catch (error) {
