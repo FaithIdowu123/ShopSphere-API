@@ -1,9 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const productController = require("../controllers/productController");
+const {
+  validateProductCreate,
+  validateProductUpdate
+} = require("../middleware/validate");
 
 // CREATE product
-router.post("/", async (req, res, next) => {
+router.post("/", validateProductCreate, async (req, res, next) => {
   try {
     await productController.createProduct(req, res, next);
   } catch (error) {
@@ -36,7 +40,7 @@ router.get("/:id", async (req, res, next) => {
 });
 
 // UPDATE product
-router.put("/:id", async (req, res, next) => {
+router.put("/:id", validateProductUpdate, async (req, res, next) => {
   try {
     await productController.updateProduct(req, res, next);
   } catch (error) {
