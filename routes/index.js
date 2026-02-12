@@ -1,5 +1,5 @@
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 
 const productRoutes = require('./productRoutes');
 const userRoutes = require('./userRoutes');
@@ -7,14 +7,19 @@ const orderRoutes = require('./orderRoutes');
 const reviewRoutes = require('./reviewRoutes');
 const authRoutes = require('./authRoutes');
 
-routes.use('/auth', authRoutes); 
+// ------------------- AUTH ROUTES -------------------
+router.use('/auth', authRoutes);
 
-routes.use('/products', productRoutes);
+// ------------------- PRODUCT ROUTES -------------------
+router.use('/products', productRoutes);
 
-routes.use('/users', userRoutes);
+// ------------------- USER ROUTES -------------------
+router.use('/users', userRoutes);
 
-routes.use('/orders', orderRoutes);
+// ------------------- ORDER ROUTES -------------------
+router.use('/orders', orderRoutes);
 
-routes.use('/reviews', reviewRoutes);
+// ------------------- REVIEW ROUTES -------------------
+router.use('/reviews', reviewRoutes);
 
-module.exports = routes;
+module.exports = router;

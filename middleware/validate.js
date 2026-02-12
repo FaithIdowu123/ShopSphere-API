@@ -1,5 +1,8 @@
 const validator = require('../helpers/validate');
 
+/**
+ * Sends validation error response
+ */
 const sendValidationError = (res, err) => {
   return res.status(412).send({
     success: false,
@@ -8,6 +11,9 @@ const sendValidationError = (res, err) => {
   });
 };
 
+/**
+ * Runs validation rules
+ */
 const runValidation = (rules) => (req, res, next) => {
   validator(req.body, rules, {}, (err, status) => {
     if (!status) {
@@ -16,6 +22,10 @@ const runValidation = (rules) => (req, res, next) => {
     next();
   });
 };
+
+/* ===========================
+   PRODUCT VALIDATION
+=========================== */
 
 const validateProductCreate = runValidation({
   name: 'required|string',
@@ -35,6 +45,10 @@ const validateProductUpdate = runValidation({
   rating: 'numeric|between:0,5'
 });
 
+/* ===========================
+   USER VALIDATION
+=========================== */
+
 const validateUserCreate = runValidation({
   firstName: 'required|string',
   lastName: 'required|string',
@@ -49,9 +63,33 @@ const validateUserUpdate = runValidation({
   oauthProvider: 'required|string'
 });
 
+/* ===========================
+   ORDER VALIDATION (WEEK 06)
+=========================== */
+
+const validateOrderCreate = runValidation({
+  userId: 'required|string',
+  products: 'required|array',
+  totalPrice: 'required|numeric|min:0',
+  status: 'string'
+});
+
+const validateOrderUpdate = runValidation({
+  userId: 'required|string',
+  products: 'required|array',
+  totalPrice: 'required|numeric|min:0',
+  status: 'string'
+});
+
+/* ===========================
+   EXPORTS
+=========================== */
+
 module.exports = {
   validateProductCreate,
   validateProductUpdate,
   validateUserCreate,
-  validateUserUpdate
+  validateUserUpdate,
+  validateOrderCreate,
+  validateOrderUpdate
 };

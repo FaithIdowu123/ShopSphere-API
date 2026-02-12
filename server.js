@@ -4,6 +4,9 @@ const connectDB = require("./config/db");
 
 const PORT = process.env.PORT || 3000;
 
+app.use('/orders', require('./routes/orderRoutes'));
+
+
 connectDB()
   .then(() => {
     console.log("MongoDB connected, starting server...");
