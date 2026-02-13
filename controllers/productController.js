@@ -1,4 +1,5 @@
 const Product = require('../models/products'); // match the model file name and exported name
+const recalculateRating = require('../utils/recalculateRating');
 
 // CREATE Product
 exports.createProduct = async (req, res, next) => {
@@ -14,6 +15,7 @@ exports.createProduct = async (req, res, next) => {
     };
 
     const product = await Product.create(productData);
+
     res.status(201).json(product);
   } catch (error) {
     next(error); // Pass to global error handler
@@ -33,6 +35,7 @@ exports.getProducts = async (req, res, next) => {
 // GET Single Product
 exports.getProductById = async (req, res, next) => {
   try {
+    recalculateRating(req.params.id);
     const product = await Product.findById(req.params.id);
 
     if (!product) {
@@ -63,6 +66,7 @@ exports.updateProduct = async (req, res, next) => {
       updateData,
       { new: true, runValidators: true }
     );
+    recalculateRating(req.params.id);
 
     if (!product) {
       const err = new Error('Product not found');
@@ -92,3 +96,5 @@ exports.deleteProduct = async (req, res, next) => {
     next(error);
   }
 };
+
+

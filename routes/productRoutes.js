@@ -52,7 +52,7 @@ router.put("/:id", isauthenticated, validateProductUpdate, async (req, res, next
 });
 
 // DELETE product
-router.delete("/:id", async (req, res, next) => {
+router.delete("/:id", isauthenticated, async (req, res, next) => {
   try {
     await productController.deleteProduct(req, res, next);
   } catch (error) {

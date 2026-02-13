@@ -82,7 +82,7 @@ router.put('/:id', isauthenticated, validateUserUpdate, async (req, res, next) =
  *     summary: Delete a user
  *     tags: [Users]
  */
-router.delete('/:id', async (req, res, next) => {
+router.delete('/:id', isauthenticated, async (req, res, next) => {
   try {
     await userController.deleteUser(req, res);
   } catch (error) {

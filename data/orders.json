@@ -1,8 +1,12 @@
 [
   {
     "userId": "698c8ec7a994d5db983334df",
-    "products": ["6982156c0ce42f2921c89bec", "6982156c0ce42f2921c89bea", "6982156c0ce42f2921c89bd9"],
-    "totalAmount": 55.97,
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bec", "itemCount": 1 },
+      { "productId": "6982156c0ce42f2921c89bea", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89bd9", "itemCount": 1 }
+    ],
+    "totalAmount": 155.96,
     "status": "delivered",
     "paymentMethod": "credit_card",
     "createdAt": "2026-02-01T12:30:00Z",
@@ -10,8 +14,10 @@
   },
   {
     "userId": "698c8ec7a994d5db983334e0",
-    "products": ["6982156c0ce42f2921c89bd5", "6982156c0ce42f2921c89be8"],
-    "totalAmount": 119.98,
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd5", "itemCount": 3 }
+    ],
+    "totalAmount": 179.97,
     "status": "shipped",
     "paymentMethod": "paypal",
     "createdAt": "2026-02-02T09:45:00Z",
@@ -19,8 +25,11 @@
   },
   {
     "userId": "698c8ec7a994d5db983334e1",
-    "products": ["6982156c0ce42f2921c89bdd", "6982156c0ce42f2921c89bdf", "6982156c0ce42f2921c89bde"],
-    "totalAmount": 438.97,
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bdd", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89bdf", "itemCount": 1 }
+    ],
+    "totalAmount": 219.97,
     "status": "processing",
     "paymentMethod": "credit_card",
     "createdAt": "2026-02-03T14:15:00Z",
@@ -28,17 +37,24 @@
   },
   {
     "userId": "698c8ec7a994d5db983334e2",
-    "products": ["6982156c0ce42f2921c89be0", "6982156c0ce42f2921c89be7"],
-    "totalAmount": 89.98,
-    "status": "delivered",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be0", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89be7", "itemCount": 3 }
+    ],
+    "totalAmount": 249.95,
+    "status": "pending",
     "paymentMethod": "bank_transfer",
     "createdAt": "2026-02-04T11:20:00Z",
     "orderAddress": "88 Peace Lane, Ibadan, Nigeria"
   },
   {
     "userId": "698c8ec7a994d5db983334e3",
-    "products": ["6982156c0ce42f2921c89be9", "6982156c0ce42f2921c89bea", "6982156c0ce42f2921c89bdc"],
-    "totalAmount": 77.97,
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be9", "itemCount": 1 },
+      { "productId": "6982156c0ce42f2921c89bdc", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89bea", "itemCount": 1 }
+    ],
+    "totalAmount": 197.94,
     "status": "cancelled",
     "paymentMethod": "paypal",
     "createdAt": "2026-02-05T08:50:00Z",
@@ -46,20 +62,178 @@
   },
   {
     "userId": "698c8ec7a994d5db983334e4",
-    "products": ["6982156c0ce42f2921c89bd7", "6982156c0ce42f2921c89be2", "6982156c0ce42f2921c89be4"],
-    "totalAmount": 244.97,
-    "status": "shipped",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd7", "itemCount": 4 }
+    ],
+    "totalAmount": 249.96,
+    "status": "delivered",
     "paymentMethod": "credit_card",
     "createdAt": "2026-02-06T16:30:00Z",
     "orderAddress": "10 Liberty Avenue, Enugu, Nigeria"
   },
   {
     "userId": "698c8ec7a994d5db983334e5",
-    "products": ["6982156c0ce42f2921c89bd4", "6982156c0ce42f2921c89be8", "6982156c0ce42f2921c89bd8"],
-    "totalAmount": 259.97,
-    "status": "processing",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd4", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89be8", "itemCount": 1 }
+    ],
+    "totalAmount": 139.97,
+    "status": "pending",
     "paymentMethod": "bank_transfer",
     "createdAt": "2026-02-07T09:15:00Z",
     "orderAddress": "77 Sunrise Road, Abuja, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e6",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be8", "itemCount": 1 },
+      { "productId": "6982156c0ce42f2921c89bd8", "itemCount": 2 }
+    ],
+    "totalAmount": 179.97,
+    "status": "processing",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-08T10:10:00Z",
+    "orderAddress": "2 Marina Road, Lagos, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e7",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd8", "itemCount": 5 }
+    ],
+    "totalAmount": 249.95,
+    "status": "shipped",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-09T13:40:00Z",
+    "orderAddress": "9 River Lane, Calabar, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334e8",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd6", "itemCount": 1 },
+      { "productId": "6982156c0ce42f2921c89bd3", "itemCount": 2 }
+    ],
+    "totalAmount": 124.97,
+    "status": "delivered",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-10T07:30:00Z",
+    "orderAddress": "3 Unity Close, Kaduna, Nigeria"
+  },
+
+  {
+    "userId": "698c8ec7a994d5db983334e9",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bea", "itemCount": 3 },
+      { "productId": "6982156c0ce42f2921c89bd1", "itemCount": 1 }
+    ],
+    "totalAmount": 189.96,
+    "status": "processing",
+    "paymentMethod": "bank_transfer",
+    "createdAt": "2026-02-11T12:00:00Z",
+    "orderAddress": "14 Hope Street, Owerri, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334ea",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd1", "itemCount": 2 }
+    ],
+    "totalAmount": 99.98,
+    "status": "pending",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-12T09:20:00Z",
+    "orderAddress": "22 Palm Road, Uyo, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334eb",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd2", "itemCount": 3 },
+      { "productId": "6982156c0ce42f2921c89bd4", "itemCount": 2 }
+    ],
+    "totalAmount": 249.95,
+    "status": "shipped",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-13T11:50:00Z",
+    "orderAddress": "6 King Street, Benin City, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334ec",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89bd3", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89be6", "itemCount": 1 }
+    ],
+    "totalAmount": 134.97,
+    "status": "delivered",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-14T15:30:00Z",
+    "orderAddress": "18 Market Road, Lokoja, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334ed",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be4", "itemCount": 1 }
+    ],
+    "totalAmount": 69.99,
+    "status": "cancelled",
+    "paymentMethod": "bank_transfer",
+    "createdAt": "2026-02-15T08:10:00Z",
+    "orderAddress": "30 Hilltop Avenue, Jos, Nigeria"
+  },
+
+  {
+    "userId": "698c8ec7a994d5db983334ee",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be5", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89be7", "itemCount": 1 }
+    ],
+    "totalAmount": 209.97,
+    "status": "processing",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-16T17:45:00Z",
+    "orderAddress": "4 Ocean Drive, Warri, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334ef",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be6", "itemCount": 2 }
+    ],
+    "totalAmount": 89.98,
+    "status": "pending",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-17T10:25:00Z",
+    "orderAddress": "11 Central Street, Asaba, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334f0",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be7", "itemCount": 3 },
+      { "productId": "6982156c0ce42f2921c89be8", "itemCount": 1 }
+    ],
+    "totalAmount": 239.96,
+    "status": "shipped",
+    "paymentMethod": "credit_card",
+    "createdAt": "2026-02-18T14:00:00Z",
+    "orderAddress": "25 Plateau Road, Bauchi, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334f1",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be8", "itemCount": 1 }
+    ],
+    "totalAmount": 59.99,
+    "status": "delivered",
+    "paymentMethod": "bank_transfer",
+    "createdAt": "2026-02-19T09:40:00Z",
+    "orderAddress": "8 Crescent Avenue, Abeokuta, Nigeria"
+  },
+  {
+    "userId": "698c8ec7a994d5db983334f2",
+    "products": [
+      { "productId": "6982156c0ce42f2921c89be9", "itemCount": 2 },
+      { "productId": "6982156c0ce42f2921c89bea", "itemCount": 1 }
+    ],
+    "totalAmount": 189.97,
+    "status": "processing",
+    "paymentMethod": "paypal",
+    "createdAt": "2026-02-20T13:15:00Z",
+    "orderAddress": "40 Sunrise Boulevard, Akure, Nigeria"
   }
 ]

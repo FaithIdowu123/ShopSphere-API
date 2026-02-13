@@ -1,20 +1,31 @@
 const express = require('express');
-const routes = express.Router();
+const router = express.Router();
 
 const productRoutes = require('./productRoutes');
 const userRoutes = require('./userRoutes');
 const orderRoutes = require('./orderRoutes');
 const reviewRoutes = require('./reviewRoutes');
 const authRoutes = require('./authRoutes');
+const indexController = require('../controllers/indexController');
 
-routes.use('/auth', authRoutes); 
+router.get('/', (req, res) => {
+    indexController.setReviews();
+    res.send("Welcom to ShopSphere API " + (req.user ? `${req.user.firstName}` : ""));
+});
 
-routes.use('/products', productRoutes);
+// ------------------- AUTH ROUTES -------------------
+router.use('/auth', authRoutes);
 
-routes.use('/users', userRoutes);
+// ------------------- PRODUCT ROUTES -------------------
+router.use('/products', productRoutes);
 
-routes.use('/orders', orderRoutes);
+// ------------------- USER ROUTES -------------------
+router.use('/users', userRoutes);
 
-routes.use('/reviews', reviewRoutes);
+// ------------------- ORDER ROUTES -------------------
+router.use('/orders', orderRoutes);
 
-module.exports = routes;
+// ------------------- REVIEW ROUTES -------------------
+router.use('/reviews', reviewRoutes);
+
+module.exports = router;

@@ -28,11 +28,6 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// Root route
-app.get('/', (req, res) => {
-  res.send("Welcom to ShopSphere API " + (req.user ? `${req.user.firstName}` : ""));;
-});
-
 // Mount routes
 app.use("/", routes);
 
