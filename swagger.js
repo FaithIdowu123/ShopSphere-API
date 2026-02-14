@@ -5,10 +5,10 @@ const doc = {
     title: 'ShopSphere API',
     description: 'CSE 341 CRUD API using MongoDB (Users & Products)'
   },
-  host: 'localhost:3000',
-  schemes: ['http'],
-  /* host: 'shopsphere-api-cpww.onrender.com',
-  schemes: ['https'], */
+  /* host: 'localhost:3000',
+  schemes: ['http'], */
+  host: 'shopsphere-api-cpww.onrender.com',
+  schemes: ['https'],
   tags: [
     {
       name: 'Users',
@@ -17,6 +17,14 @@ const doc = {
     {
       name: 'Products',
       description: 'Product management endpoints'
+    },
+    {
+      name: 'Orders',
+      description: 'Order management endpoints'
+    },
+    {
+      name: 'Reviews',
+      description: 'Review management endpoints'
     }
   ]
 };

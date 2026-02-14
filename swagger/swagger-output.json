@@ -5,7 +5,7 @@
     "description": "CSE 341 CRUD API using MongoDB (Users & Products)",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "shopsphere-api-cpww.onrender.com",
   "basePath": "/",
   "tags": [
     {
@@ -15,10 +15,18 @@
     {
       "name": "Products",
       "description": "Product management endpoints"
+    },
+    {
+      "name": "Orders",
+      "description": "Order management endpoints"
+    },
+    {
+      "name": "Reviews",
+      "description": "Review management endpoints"
     }
   ],
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
